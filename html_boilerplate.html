@@ -3,10 +3,52 @@
 	<head>
 		<meta charset="utf-8"/>
 		<!-- <meta name="viewport" content="width=device-width"> -->
-		<title>HTML Boilerplate</title> 
+		<title>HTML Boilerplate</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+
 	</head>
 	<body>
+
+			<img src="https://travel.usnews.com/static-travel/images/destinations/44/empire_state_building_getty_zsolt_hlinka.jpg">
+			<h2>New York Chill</h2>
+			<h4>Chill: </h4>
+			<div id="div1" class="text-container"></div>
+			<h4>Direction: </h4>
+			<div id="div2" class="text-container"></div>
+			<h4>Speed: </h4>
+			<div id="div3" class="text-container"></div>
+
+
 		<!-- CONTENT GOES HERE -->
+
 	</body>
+	<script>
+		var callbackFunction = function(data) {
+			var wind = data.query.results.channel.wind;
+			console.log(wind);
+			var newDiv1 = document.createElement("div");
+			var newDiv2 = document.createElement("div");
+			var newDiv3 = document.createElement("div");
+			// var newDiv2 = document.createElement("div");
+			// and give it some content
+			var chillContent = document.createTextNode(wind.chill);
+			var dirContent = document.createTextNode(wind.direction);
+			var speedContent = document.createTextNode(wind.speed);
+			// add the text node to the newly created div
+			newDiv1.appendChild(chillContent);
+			newDiv2.appendChild(dirContent);
+			newDiv3.appendChild(speedContent);
+
+			// add the newly created element and its content into the DOM
+			var chillDiv = document.getElementById("div1");
+			var dirDiv = document.getElementById("div2");
+			var speedDiv = document.getElementById("div3");
+
+			document.body.insertBefore(newDiv1, chillDiv);
+			document.body.insertBefore(newDiv2, dirDiv);
+			document.body.insertBefore(newDiv3, speedDiv);
+
+		};
+	</script>
+	<script src="https://query.yahooapis.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='new york, ny')&format=json&callback=callbackFunction"></script>
 </html>
