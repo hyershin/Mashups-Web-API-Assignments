@@ -6,4 +6,4 @@ Check out my process here:
 https://hrs284.tumblr.com/post/171524507016/mashups-wk-5-hooking-api
 
 Check out my web here:
-https://github.com/hyershin/Mashups-Web-API-Assignments/blob/master/Week4%20Assignment/horoscope%20api/index.html
+https://github.com/hyershin/Mashups-Web-API-Assignments/blob/master/Week5%20Assignment/gemstone%20api/index.html
