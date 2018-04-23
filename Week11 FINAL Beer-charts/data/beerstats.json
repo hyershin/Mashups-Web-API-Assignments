@@ -1,0 +1,43 @@
+[
+  {
+    "country": "USA",
+    "Consumption": 74.90
+  },
+
+  {
+    "country": "Czech Republic",
+    "Consumption": 137.38
+  },
+
+  {
+    "country": "Poland",
+    "Consumption": 98.06
+  },
+
+  {
+    "country": "Germany",
+    "Consumption": 95.95
+  },
+
+  {
+    "country": "Austria",
+    "Consumption": 95.46
+  },
+
+  {
+    "country": "Lithuania",
+    "Consumption": 92
+  },
+
+  {
+    "country": "Croatia",
+    "Consumption": 81.19
+  },
+
+  {
+    "country": "Ireland",
+    "Consumption": 79.22
+  }
+
+
+]
