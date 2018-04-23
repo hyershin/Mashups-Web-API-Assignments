@@ -3,4 +3,4 @@ For my final project, I decided to create a data visualization on beer statistic
 
 Check out my process here: https://hrs284.tumblr.com/post/173229432746/mashups-wk-11-final-project
 
-Check out my web here: https://github.com/hyershin/Mashups-Web-API-Assignments/blob/master/Week5%20Assignment/gemstone%20api/index.html
+Check out my web here: https://github.com/hyershin/Mashups-Web-API-Assignments/blob/master/Week11%20FINAL%20Beer-charts/index.html
